@@ -26,15 +26,47 @@
 
     width: 365px;
     height: 200px;
+    padding-bottom: 20px;
+    box-sizing: border-box;
 
     position: absolute;
     right: -95px;
     bottom: 285px;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+    gap: 15px;
+    
+    color: white;
 
 }
-.section-cards :last-child {
+.img-card h2 {
+    width: 85%;
+    
+    text-align: center;
+}
+.img-card span{
+    display: flex;
+    justify-content: space-between;
+
+    width: 85%;
+}
+#last-img {
     background-image: url(assets/images/bg-card-back.png);
     
     bottom: 50px;
     right: -175px;
+
+    padding-bottom: 3px;
+
+    justify-content: center;
+
+    
+}
+#last-img span {
+    justify-content: end;
+
+    width: 75%;
 }
