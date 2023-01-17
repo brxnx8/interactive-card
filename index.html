@@ -11,14 +11,16 @@
     <main class="section-main">
         <section class="section-cards">
             <div class="img-card">
-                <h2> 0000 0000 0000 0000</h2>
+                <h2 id="number"> 0000 0000 0000 0000</h2>
                 <span>
-                    <p>name last-name</p>
-                    <p>00/00</p>
+                    <p id="name">name last-name</p>
+                    <div class="date">
+                        <p id="mounth">00</p>/<p id="day">00</p>
+                    </div>
                 </span>
             </div>
             <div id="last-img">
-                <span>000</span>
+                <span id="cvc">000</span>
             </div>
         </section>
         <section class="section-informations">
@@ -27,13 +29,13 @@
                         <div>
                             <label for="name">Name</label>
                             <br>
-                            <input type="text" name="name">
+                            <input type="text" name="name" required placeholder="aaaaa cccccc">
                         </div>
                         
                         <div>
                             <label for="number">Number</label>
                             <br>
-                            <input type="number" name="number" id="">
+                            <input type="number" name="number" id="" required placeholder="1234 5678 9123 0000">
                         </div>
 
                         <div class="validity">
@@ -42,15 +44,15 @@
                                     <label for="mounth">Date</label>
 
                                 <div id="div-mouth">
-                                    <input type="number" name="mounth" id="">
-                                    <input type="number" name="day" id="">
+                                    <input type="number" name="mounth" id="" required placeholder="MM">
+                                    <input type="number" name="day" id="" required placeholder="DD">
                                 </div>
                             </section>
 
                             <div class="cvc">
                                 <label for="cvc">CVC</label>
                                 <br>
-                                <input type="number" name="cvc">
+                                <input type="number" name="cvc" required placeholder="000">
                             </div>
 
                         </div>
