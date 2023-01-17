@@ -34,14 +34,14 @@ label{
     background-repeat: no-repeat;
     background-size: cover;
 }
-.img-card{
+.img-card, #last-img{
     background-image: url(assets/images/bg-card-front.png);
     background-size: contain;
     background-repeat: no-repeat;
 
     width: 365px;
     height: 200px;
-    padding-bottom: 20px;
+    padding-bottom: 10%;
     box-sizing: border-box;
 
     position: absolute;
@@ -76,7 +76,7 @@ label{
     bottom: 50px;
     right: -175px;
 
-    padding-bottom: 3px;
+    padding-bottom: 1%;
 
     justify-content: center;
 
@@ -120,9 +120,6 @@ label{
     width: 100%;
 
 }
-.validity{
-    gap: 25px;
-}
 .mounth-day div{
     display: flex;
     gap: 10px;
@@ -130,8 +127,11 @@ label{
 #div-mouth input{
     width: 40px;
 }
-.validity input{
-    width: 90%;
+.cvc{
+    width: 50%;
+}
+.cvc input{
+    width: 92%;
 }
 #button-formCard{
     background-color: rgb(26, 26, 121);
@@ -153,3 +153,98 @@ label{
     background-color: rgba(35, 35, 163, 0.867);
 }
 
+
+
+@media(max-width:832px){
+    .section-main{
+        flex-direction: column;
+        justify-content: center;
+
+        width: 100%;
+        padding-bottom: 15%;
+        
+    }
+    .section-cards{
+        width: 100%;
+        height: 75vh;
+    }
+    .img-card{
+        bottom: -50px;
+        left: 10%;
+
+        width: 350px;
+        padding-bottom: 5%;
+
+        z-index: 2;
+    }
+    .img-card h2 {
+        width: 85%;
+        
+        word-spacing: 3px;
+        letter-spacing: 2px;
+        text-align: center;
+    }
+    #last-img{
+        bottom: 70px;
+        right: 10%;
+
+        width: 350px;
+        
+        z-index: 1;
+    }
+    .section-informations{
+        margin: 0;
+        width: 100%;
+    }
+    .section-informations fieldset{
+        width: 70%;
+        height: 50%;
+    }
+}
+
+@media (max-width: 411px){
+    .img-card{
+        width: 320px;
+        padding-bottom: 20%;
+    }
+    .img-card h2 {
+        width: 75%;
+        
+        word-spacing: 2px;
+        letter-spacing: 1.5px;
+    }
+    #last-img{
+        width: 320px;
+        padding-bottom: 6%;
+    }
+}
+@media (max-width: 411px){
+    .img-card{
+        width: 320px;
+        padding-bottom: 18%;
+    }
+    .img-card h2 {
+        width: 75%;
+        
+        word-spacing: 1.5px;
+        letter-spacing: 1px;
+    }
+    #last-img{
+        width: 320px;
+    }
+}
+@media (max-width: 380px){
+    .img-card{
+        width: 300px;
+    }
+    .img-card h2 {
+        width: 75%;
+        
+        word-spacing: 1px;
+        letter-spacing: 0.5px;
+    }
+    #last-img{
+        width: 300px;
+        padding-bottom: 10%;
+    }
+}
