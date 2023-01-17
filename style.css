@@ -7,8 +7,13 @@ input{
     border: 0.5px solid rgba(0, 0, 0, 0.194);
     border-radius: 5px;
 
+    margin-top: 5px;
     padding: 7px;
-    width: 100%;
+    width: 96%;
+}
+label{
+    font-weight: 700;
+    font-size: 20px;
 }
 
 .section-main{
@@ -95,7 +100,7 @@ input{
     align-items: center;
 }
 .section-informations fieldset{
-    width: 50%;
+    width: 60%;
 
     border: none;
 }
@@ -110,5 +115,41 @@ input{
 
 .validity{
     display: flex;
+    justify-content: space-between;
+
+    width: 100%;
+
+}
+.validity{
+    gap: 25px;
+}
+.mounth-day div{
+    display: flex;
+    gap: 10px;
+}
+#div-mouth input{
+    width: 40px;
+}
+.validity input{
+    width: 90%;
+}
+#button-formCard{
+    background-color: rgb(26, 26, 121);
+    
+    margin-top: 50px;
+    width: 100%;
+    padding: 10px;
+    
+    border: none;
+    border-radius: 5px;
+
+    font-size: 20px;
+    font-weight: 700;
+    color: white;
+
+    cursor: pointer;
+}
+#button-formCard:hover{
+    background-color: rgba(35, 35, 163, 0.867);
 }
 
