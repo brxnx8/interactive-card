@@ -2,7 +2,9 @@
     padding: 0;
     margin: 0;
 }
-
+.span-error{
+    color: red;
+}
 input{
     border: 0.5px solid rgba(0, 0, 0, 0.194);
     border-radius: 5px;
@@ -69,6 +71,10 @@ label{
     justify-content: space-between;
 
     width: 85%;
+}
+.name{
+    letter-spacing: 1px;
+    word-spacing: 3px;
 }
 .date{
     display: flex;

@@ -30,12 +30,14 @@
                             <label for="name">Name</label>
                             <br>
                             <input type="text" name="name" id="name" required placeholder="aaaaa cccccc" pattern="[a-zA-Z]+[ ][a-zA-Z]+">
+                            <span class="span-error" id="span-name"></span>    
                         </div>
                         
                         <div>
                             <label for="number">Number</label>
                             <br>
                             <input type="text" name="number" id="number" required placeholder="1234 5678 9123 0000" pattern="[0-9]{4} [0-9]{4} [0-9]{4} [0-9]{4}" maxlength="19">
+                            <span class="span-error" id="span-number"></span>
                         </div>
 
                         <div class="validity">
@@ -46,13 +48,17 @@
                                 <div id="div-mouth">
                                     <input type="text" name="mounth" id="mounth" required placeholder="MM" pattern="[0-9]{2}" maxlength="2">
                                     <input type="text" name="day" id="" required placeholder="DD" pattern="[0-9]{2}" maxlength="2">
+                                    
                                 </div>
+                                <span class="span-error" id="span-mounth"></span>
+                                
                             </section>
 
                             <div class="cvc">
                                 <label for="cvc">CVC</label>
                                 <br>
                                 <input type="text" name="cvc" id="cvc" required placeholder="000" pattern="[0-9]{3}" maxlength="3">
+                                <span class="span-error" id="span-cvc"></span>
                             </div>
 
                         </div>

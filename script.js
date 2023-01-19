@@ -1,5 +1,6 @@
 const campos = document.querySelectorAll('input');
 
+const btn = document.querySelector('#button-formCard');
 
 campos.forEach(item => {
     item.addEventListener('keyup', function(e) {
@@ -46,5 +47,24 @@ campos.forEach(item => {
             edit.innerText = e.target.value.toUpperCase();
         }
         
+    })
+})
+
+btn.addEventListener('click', (event) => {
+    
+    event.preventDefault();
+    
+    campos.forEach( e => {
+        campo = e.validity;
+        const mensagem = document.querySelector(`#span-${e.name}`);
+        if(!(campo.valid)){
+            if(e.name != 'day'){
+                
+                mensagem.innerText = `Preencha corretamente`
+            }
+            
+        }else{
+            mensagem.innerText = ``
+        }
     })
 })
