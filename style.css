@@ -5,6 +5,15 @@
 .span-error{
     color: red;
 }
+#span-mounth, #span-day{
+    width: 50px;
+    display:block;
+}
+.div-span{
+    display: flex;
+    justify-content: space-between;
+    width: 150px;
+}
 input{
     border: 0.5px solid rgba(0, 0, 0, 0.194);
     border-radius: 5px;
@@ -131,7 +140,7 @@ label{
 }
 .mounth-day div{
     display: flex;
-    gap: 10px;
+    gap: 46px;
 }
 #div-mouth input{
     width: 40px;

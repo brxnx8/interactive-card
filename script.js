@@ -57,11 +57,9 @@ btn.addEventListener('click', (event) => {
     campos.forEach( e => {
         campo = e.validity;
         const mensagem = document.querySelector(`#span-${e.name}`);
-        if(!(campo.valid)){
-            if(e.name != 'day'){
-                
-                mensagem.innerText = `Preencha corretamente`
-            }
+        if(!(campo.valid)){        
+            
+            mensagem.innerText = `Preencha corretamente`
             
         }else{
             mensagem.innerText = ``
